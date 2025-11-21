@@ -1,0 +1,9 @@
+services:
+  vuepress:
+    container_name: enzanvitepress-blog
+    build: .
+    ports:
+      - "40050:8080"
+    volumes:
+      - ./docs:/app/docs
+    command: yarn dev --host --port 8080
