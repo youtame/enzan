@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: さっそく読む
-      link: /menu
+      link: /article/
     - theme: alt
       text: このブログついて
-      link: ./features
+      link: ./menu
     - theme: alt
       text: 102℃について
       link: https://lozdo.com/

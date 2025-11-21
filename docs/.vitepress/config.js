@@ -25,7 +25,7 @@ export default {
       {
         text: '記事',
         items: [
-          { text: '記事', link: '/article/' },
+          { text: '記事一覧', link: '/article/' },
           { text: '塩山駅に行ったときの話', link: '/article/20251120' },
           { text: '横浜市営地下鉄の進化', link: '/article/20251121' }
         ]
@@ -46,18 +46,15 @@ export default {
     },
   },
   head: [
+    // Favicon and related icons
     ['link', { rel: 'icon', type: 'image/png', href: '/enzan/favicon/favicon-96x96.png', sizes: '96x96' }],
-    
-    // SVG icon
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/enzan/favicon/favicon.svg' }],
-    
-    // Favicon
     ['link', { rel: 'shortcut icon', href: '/enzan/favicon/favicon.ico' }],
-    
-    // Apple touch icon
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/enzan/favicon/apple-touch-icon.png' }],
-    
-    // Web manifest for PWA
-    ['link', { rel: 'manifest', href: '/enzan/site.webmanifest' }]
+    ['link', { rel: 'manifest', href: '/enzan/site.webmanifest' }],
+
+    // theme-color meta tags for light and dark modes
+    ['meta', { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' }],
+    ['meta', { name: 'theme-color', content: '#121212', media: '(prefers-color-scheme: dark)' }]
   ]
 }
