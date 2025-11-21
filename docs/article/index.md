@@ -19,14 +19,14 @@ import Linkcard from '../components/Link.vue';
 
 <Linkcard
 title="20日　塩山駅の話" 
-image="/20251120-1.png" 
+image="/enzan/20251120-1.png" 
 description="塩山に行ったときの話"
 link="./20251120"
 />
 
 <Linkcard
 title="21日　横浜市営地下鉄の進化" 
-image="/20251121-1.png" 
+image="/enzan/20251121-1.png" 
 description="進化に関する話"
 link="./20251121"
 />
