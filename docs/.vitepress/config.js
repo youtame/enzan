@@ -27,7 +27,8 @@ export default {
         items: [
           { text: '記事一覧', link: '/article/' },
           { text: '塩山駅に行ったときの話', link: '/article/20251120' },
-          { text: '横浜市営地下鉄の進化', link: '/article/20251121' }
+          { text: '横浜市営地下鉄の進化', link: '/article/20251121' },
+          { text: '一泊二日の寄り道', link: '/article/20251122' }
         ]
       },
       {
