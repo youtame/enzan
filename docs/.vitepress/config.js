@@ -1,5 +1,5 @@
 export default {
-  // base: '/enzan/',
+  base: '/enzan/',
 
   title: 'Site for Train',
   publicDir: 'public',
