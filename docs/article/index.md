@@ -33,7 +33,7 @@ link="./20251121"
 
 <Linkcard
 title="22日　一泊二日の寄り道" 
-image="/enzan/20251120-1.png" 
+image="/enzan/20251122-1.png" 
 description="学校帰りに大阪へ行った話"
 link="./20251122"
 />
