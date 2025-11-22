@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Site for Train</title>
+
+    <!-- Favicon and related icons -->
+    <link rel="icon" type="image/png" href="/enzan/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/enzan/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/enzan/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/enzan/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/enzan/site.webmanifest">
+
+    <!-- theme-color meta tags for light and dark modes -->
+    <meta name="theme-color" content="#e74717" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#e74717" media="(prefers-color-scheme: dark)">
+
+    <!-- Responsive design settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom styles for responsiveness (if needed) -->
+    <style>
+        
+        .wrap {
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            padding: 10px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            width: 90%;    
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            background-color: #0a0a0a;
+        }
+        h1 {
+            text-align: center;
+            color: #e74717;
+            margin-top: 20px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #e74717;
+        }
+        #giscus {
+            margin: 0 auto;
+            max-width: 90%;
+            width: 90%;
+            padding: 20px;
+        }
+        .color-text-primary {
+            width: 600px;
+            max-width: 90%;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #e74717;
+            color: #000;
+            font-size: 16px;
+            padding: 12px 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .link-button:hover {
+            background-color: #d64013;
+            transform: translateY(-3px);
+        }
+
+        .link-button:active {
+            transform: translateY(1px);
+        }
+        @media (max-width: 600px) {
+            .link-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>お問い合わせ</h1>
+    <p>Site for Trainに関してお問い合わせいただけます</p>
+    <a href="/contact" class="link-button"><strong>前のページへもどる</strong></a>
+
+    <div class="wrap">
+        <!-- <div id="giscus"></div> -->
+    </div>
+
+    <script src="https://giscus.app/client.js"
+            data-repo="youtame/enzan"
+            data-repo-id="R_kgDOQaCV6Q"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOQaCV6c4CyFIZ"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="ja"
+            crossorigin="anonymous"
+            async>
+    </script>
+
+</body>
+</html>

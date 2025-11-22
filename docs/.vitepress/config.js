@@ -1,5 +1,5 @@
 export default {
-  base: '/enzan/',
+  // base: '/enzan/',
 
   title: 'Site for Train',
   publicDir: 'public',
@@ -7,7 +7,8 @@ export default {
     brandColor: '#008080',
     nav: [
       { text: 'はじめに', link: '/menu' },
-      { text: '記事', link: '/article' }
+      { text: '記事', link: '/article' },
+      { text: 'サイトについて', link: '/about/' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/youtame/enzan/' },
@@ -34,7 +35,8 @@ export default {
       {
         text: 'このサイトについて',
         items: [
-          { text: 'このサイトについて', link: '/about/' }
+          { text: 'このサイトについて', link: '/about/' },
+          { text: 'お問い合わせ', link: '/contact/' }
         ]
       },
     ],
