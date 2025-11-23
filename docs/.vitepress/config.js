@@ -29,7 +29,8 @@ export default {
           { text: '記事一覧', link: '/article/' },
           { text: '塩山駅に行ったときの話', link: '/article/20251120' },
           { text: '横浜市営地下鉄の進化', link: '/article/20251121' },
-          { text: '一泊二日の寄り道', link: '/article/20251122' }
+          { text: '一泊二日の寄り道', link: '/article/20251122' },
+          { text: '三重県伊賀市へ行った話', link: '/article/20251123' }
         ]
       },
       {

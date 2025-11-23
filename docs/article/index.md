@@ -38,6 +38,13 @@ description="学校帰りに大阪へ行った話"
 link="./20251122"
 />
 
+<Linkcard
+title="23日　三重県伊賀市へ行った話"
+image="/enzan/20251123-1.png"
+description="三重県伊賀市へ行き鉄道に乗った話"
+link="./20251123"
+/>
+
 </div>
 
 </details>
