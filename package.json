@@ -11,5 +11,8 @@
     "vue": "^3.4.0",
     "@vue/server-renderer": "^3.4.0"
   },
+  "devDependencies": {
+    "vite-plugin-imagemin": "^0.6.1"
+  },
   "packageManager": "yarn@4.9.2"
 }

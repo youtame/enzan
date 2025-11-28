@@ -8,6 +8,9 @@ import Linkcard from '../components/Link.vue';
 
 ## 2025年
 
+::: warning 表示について
+日付のトグルをタップして表示
+:::
 
 <details>
 <summary style="font-size: 20px;font-weight: 600;">11月の記事</summary>

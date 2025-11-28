@@ -1,3 +1,5 @@
+import ViteImagemin from 'vite-plugin-imagemin';
+
 export default {
   base: '/enzan/',
 
@@ -49,6 +51,21 @@ export default {
       copyright: 'Copyright © 2025- 102do LLC'
     },
   },
+  // Photo quality settings(Vite imagemin)
+  plugins: [
+    ViteImagemin({
+      gifsicle: { optimizationLevel: 7 },
+      optipng: { optimizationLevel: 7 },
+      mozjpeg: { quality: 75 },
+      pngquant: { quality: [0.5, 0.7] },
+      svgo: {
+        plugins: [
+          { removeViewBox: false },
+          { cleanupIDs: false }
+        ]
+      }
+    })
+  ],
   head: [
     // Favicon and related icons
     ['link', { rel: 'icon', type: 'image/png', href: '/enzan/favicon/favicon-96x96.png', sizes: '96x96' }],
