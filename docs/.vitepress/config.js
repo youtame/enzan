@@ -6,7 +6,7 @@ export default {
   title: 'Site for Train',
   publicDir: 'public',
   themeConfig: {
-    brandColor: '#008080',
+    brandColor: '#e73917',
     nav: [
       { text: 'はじめに', link: '/menu' },
       { text: '記事', link: '/article' },
@@ -57,7 +57,7 @@ export default {
     ViteImagemin({
       gifsicle: { optimizationLevel: 7 },
       optipng: { optimizationLevel: 7 },
-      mozjpeg: { quality: 75 },
+      mozjpeg: { quality: 65 },
       pngquant: { quality: [0.5, 0.7] },
       svgo: {
         plugins: [
@@ -77,6 +77,22 @@ export default {
 
     // theme-color meta tags for light and dark modes
     ['meta', { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' }],
-    ['meta', { name: 'theme-color', content: '#121212', media: '(prefers-color-scheme: dark)' }]
+    ['meta', { name: 'theme-color', content: '#121212', media: '(prefers-color-scheme: dark)' }],
+
+    // Google Analytics
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-E0J4HP2C0T' }
+    ],
+    [
+      'script',
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E0J4HP2C0T');
+      `
+    ]
   ]
 }
