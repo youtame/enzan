@@ -6,11 +6,12 @@ import Linkcard from '../components/Link.vue';
 
 現在公開中の記事一覧です。　記事は、公開された日付順に並んでいます。
 
-## 2025年
-
 ::: warning 表示について
 日付のトグルをタップして表示
 :::
+
+## 2025年
+
 
 <details>
 <summary style="font-size: 20px;font-weight: 600;">11月の記事</summary>
@@ -46,6 +47,25 @@ title="23日　三重県伊賀市へ行った話"
 image="/enzan/20251123-1.png"
 description="三重県伊賀市へ行き鉄道に乗った話"
 link="./20251123"
+/>
+
+</div>
+
+</details>
+
+<details>
+<summary style="font-size: 20px;font-weight: 600;">12月の記事</summary>
+
+### 12月
+
+
+<div style="margin-top:30px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
+
+<Linkcard
+title="04日　東京から１時間で行ける秘境"
+image="/enzan/20251204-1.png"
+description="JR鶴見線大川駅へ行ったときの話"
+link="./20251204"
 />
 
 </div>
