@@ -47,4 +47,8 @@ defineProps({
     padding: 1rem;
 }
 
+img {
+    border-radius: 0px;
+}
+
 </style>

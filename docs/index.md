@@ -5,10 +5,10 @@ lang: jp-JP
 hero:
   name: Site for Train
   text: All about trains<br>And me
-  tagline: 鉄道に関する趣味のようなブログサイトです
+  tagline: 鉄道に関する趣味のようなブログサイト
   image:
     src: /home.png
-    alt: Mountains of the Tateyama mountain range
+    alt: SFT main icon
   actions:
     - theme: brand
       text: さっそく読む
@@ -17,21 +17,23 @@ hero:
       text: このブログついて
       link: ./menu
     - theme: alt
-      text: 102℃について
+      text: 作成者について
       link: https://lozdo.com/
 
 features:
   - icon:
-      light:
-      dark:
-      alt:
+      src: /icon/news.svg
     title: たくさんの記事
     details: 筆者の観点から鉄道に関するとてもとてもためになる記事を提供します
     link: ./features
-  - title: このサイトはなんですか?
+  - icon:
+      src: /icon/questionmark.svg
+    title: このサイトはなんですか?
     details: 私の鉄道の趣味に関するサイトです
     link: ./features
-  - title: 週２で更新
+  - icon:
+      src: /icon/calender.svg
+    title: 週２で更新
     details: １週間につき２回ランダムなタイミングで記事を更新
     link: ./features
 ---
