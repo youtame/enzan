@@ -68,6 +68,13 @@ description="JR鶴見線大川駅へ行ったときの話"
 link="./20251204"
 />
 
+<Linkcard
+title="06日　南武線のダイヤ改正2024"
+image="/enzan/20251206-1.png"
+description="南武線による覇者行動"
+link="./20251206"
+/>
+
 </div>
 
 </details>
