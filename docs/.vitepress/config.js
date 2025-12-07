@@ -1,30 +1,10 @@
 // /enzan/docs/.vitepress/config.js
 
-import ViteImagemin from 'vite-plugin-imagemin';
-
 export default {
   base: '/enzan/',
   lastUpdated: true,
   title: 'Site for Train',
   publicDir: 'public',
-
-  // Photo quality settings(Vite imagemin)
-  vite: {
-    plugins: [
-      ViteImagemin({
-        gifsicle: { optimizationLevel: 7 },
-        optipng: { optimizationLevel: 7 },
-        mozjpeg: { quality: 75 },
-        pngquant: { quality: [0.5, 0.7] },
-        svgo: {
-          plugins: [
-            { removeViewBox: false },
-            { cleanupIDs: false }
-          ]
-        }
-      })
-    ],
-  },
 
   // Site head settings
   head: [
