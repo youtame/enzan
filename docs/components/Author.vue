@@ -27,8 +27,8 @@ defineProps({
 }
 
 .author-image {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 60px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -36,6 +36,7 @@ defineProps({
 
 .author-name {
     margin-bottom: 10px;
+    font-size: 20px;
     margin-top: 15px;
     border-top: 2px solid var(--vp-c-divider);
 }
