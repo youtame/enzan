@@ -1,5 +1,5 @@
 services:
-  vuepress:
+  vitepress:
     container_name: enzanvitepress-blog
     build: .
     ports:
