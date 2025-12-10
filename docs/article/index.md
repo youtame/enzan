@@ -74,13 +74,6 @@ image="/enzan/20251206-1.png"
 description="南武線による覇者行動"
 link="./20251206"
 />
-
-<Linkcard
-title="09日　ちん王"
-image="/enzan/20251206-1.png"
-description="おちん"
-link="./20251209"
-/>
 </div>
 
 </details>
