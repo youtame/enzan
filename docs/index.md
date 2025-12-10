@@ -5,7 +5,7 @@ lang: jp-JP
 hero:
   name: Site for Train
   text: All about trains<br>And me
-  tagline: 鉄道に関する趣味のようなブログサイト
+  tagline: 鉄道に関する趣味のブログサイト
   image:
     src: /home.png
     alt: SFT main icon
@@ -17,7 +17,7 @@ hero:
       text: このブログついて
       link: ./menu
     - theme: alt
-      text: 作成者について
+      text: 102°について
       link: https://lozdo.com/
 
 features:
@@ -29,12 +29,12 @@ features:
   - icon:
       src: /icon/questionmark.svg
     title: このサイトはなんですか?
-    details: 私の鉄道の趣味に関するサイトです
+    details: 鉄道の趣味に関するサイトです
     link: ./features
   - icon:
       src: /icon/calender.svg
     title: 週２で更新
-    details: １週間につき２回ランダムなタイミングで記事を更新
+    details: １週間につき２回以上をランダムなタイミングで記事を更新
     link: ./features
 ---
 
