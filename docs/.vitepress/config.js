@@ -44,7 +44,7 @@ export default {
 
   // Vitepress Sitemap Generation
   sitemap: {
-    hostname: 'https://youtame.github.io'
+    hostname: 'https://youtame.github.io/enzan/'
   },
 
   // Vitepress theme settings  
