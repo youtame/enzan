@@ -10,7 +10,7 @@
     <a href="https://vuepress.vuejs.org/" target="_blanck"><img src="https://img.shields.io/badge/-VitePress-009200.svg?logo=vue.js&style=for-the-badge"></a>
 </p>
 
-![Image-SFT-site](https://youtame.github.io/enzan/home.png) 
+![Image-SFT-site](https://youtame.github.io/enzan/assets/home.png) 
 
 ## Features
 
