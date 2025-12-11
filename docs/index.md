@@ -17,7 +17,7 @@ hero:
       text: このブログついて
       link: ./menu
     - theme: alt
-      text: 102°について
+      text: サイト開発者について
       link: https://lozdo.com/
 
 features:

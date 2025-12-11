@@ -2,7 +2,7 @@
 
 export default {
   base: '/enzan/',
-  lastUpdated: true,
+  lastUpdated: false,
   title: 'Site for Train',
   publicDir: 'public',
 
@@ -14,6 +14,12 @@ export default {
     ['link', { rel: 'shortcut icon', href: '/enzan/favicon/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/enzan/favicon/apple-touch-icon.png' }],
     ['link', { rel: 'manifest', href: '/enzan/site.webmanifest' }],
+
+    //OG Tag
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'Site for Train' }],
+    ['meta', { property: 'og:description', content: '少ない更新頻度とライトな記事で手軽に読める鉄道に関するブログサイト' }],
+    ['meta', { property: 'og:image', content: '/enzan/home.png' }],
 
     // theme-color meta tags for light and dark modes
     ['meta', { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' }],
@@ -36,6 +42,11 @@ export default {
     ]
   ],
 
+  // Vitepress Sitemap Generation
+  sitemap: {
+    hostname: 'https://youtame.github.io'
+  },
+
   // Vitepress theme settings  
   themeConfig: {
     brandColor: '#e73917',
@@ -47,7 +58,7 @@ export default {
         text: 'サイトについて',
         items: [
           { text: 'このサイトについて', link: '/about' },
-          { text: 'プライバシーポリシー', link: 'about#プライバシーポリシー' },
+          { text: 'プライバシーポリシー', link: '/about#プライバシーポリシー' },
           { text: 'お問い合わせ', link: '/about#お問い合わせ' }
         ] 
       }
