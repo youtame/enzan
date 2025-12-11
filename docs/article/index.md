@@ -74,6 +74,14 @@ image="/enzan/20251206-1.png"
 description="南武線による覇者行動"
 link="./20251206"
 />
+
+<Linkcard
+title="11日　シンガポールのMRT"
+image="/enzan/20251211-1.png"
+description="シンガポールのMRT、SMRTに乗った時の話"
+link="./20251211"
+/>
 </div>
+
 
 </details>

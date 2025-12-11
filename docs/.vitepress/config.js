@@ -76,7 +76,8 @@ export default {
           { text: '一泊二日の寄り道', link: '/article/20251122' },
           { text: '三重県伊賀市へ行った話', link: '/article/20251123' },
           { text: '東京から１時間で行ける秘境', link: '/article/20251204' },
-          { text: '南武線のダイヤ改正2024', link: '/article/20251206' }
+          { text: '南武線のダイヤ改正2024', link: '/article/20251206' },
+          { text: 'シンガポールのMRTの話', link: '/article/20251211' }
         ]
       },
       {
