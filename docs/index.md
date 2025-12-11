@@ -7,7 +7,7 @@ hero:
   text: All about trains<br>And me
   tagline: 鉄道に関する趣味のブログサイト
   image:
-    src: /home.png
+    src: /assets/home.png
     alt: SFT main icon
   actions:
     - theme: brand

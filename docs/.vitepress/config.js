@@ -13,13 +13,13 @@ export default {
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/enzan/favicon/favicon.svg' }],
     ['link', { rel: 'shortcut icon', href: '/enzan/favicon/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/enzan/favicon/apple-touch-icon.png' }],
-    ['link', { rel: 'manifest', href: '/enzan/site.webmanifest' }],
+    ['link', { rel: 'manifest', href: '/enzan/pages/site.webmanifest' }],
 
     //OG Tag
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'Site for Train' }],
     ['meta', { property: 'og:description', content: '少ない更新頻度とライトな記事で手軽に読める鉄道に関するブログサイト' }],
-    ['meta', { property: 'og:image', content: '/enzan/home.png' }],
+    ['meta', { property: 'og:image', content: '/enzan/assets/home.png' }],
 
     // theme-color meta tags for light and dark modes
     ['meta', { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' }],
@@ -50,7 +50,7 @@ export default {
   // Vitepress theme settings  
   themeConfig: {
     brandColor: '#e73917',
-    logo: '/home.png',
+    logo: '/assets/home.png',
     nav: [
       { text: 'はじめに', link: '/menu' },
       { text: '記事', link: '/article' },
