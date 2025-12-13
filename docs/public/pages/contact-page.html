@@ -12,55 +12,66 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/enzan/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/enzan/pages/site.webmanifest">
 
-    <!-- theme-color meta tags for light and dark modes -->
-    <meta name="theme-color" content="#1b1b1f" media="(prefers-color-scheme: light)">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1b1b1f" media="(prefers-color-scheme: dark)">
 
-    <!-- Responsive design settings -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Custom styles for responsiveness (if needed) -->
     <style>
-        
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #e74717;
+            --button-text-color: #000000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1b1b1f;
+                --text-color: #ffffff;
+                --accent-color: #e74717;
+                --button-text-color: #000000;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            width: 90%;
+            max-width: 600px;
+            padding: 0;
+            text-align: center;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
         .wrap {
             width: 600px;
             max-width: 100%;
             margin: auto;
             padding: 10px;
         }
-        body {
-            font-family: Arial, sans-serif;
-            margin: auto;
-            width: 90%;    
-            max-width: 600px;
-            padding: 0;
-            text-align: center;
-            background-color: #1b1b1f;
-        }
+
         h1 {
-            text-align: center;
-            color: #e74717;
             margin-top: 20px;
+            color: var(--accent-color);
         }
+
         p {
-            text-align: center;
             margin-bottom: 20px;
-            color: #e74717;
+            color: var(--accent-color);
         }
+
         #giscus {
             margin: 0 auto;
             max-width: 90%;
             width: 90%;
             padding: 20px;
         }
-        .color-text-primary {
-            width: 600px;
-            max-width: 90%;
-        }
+
         .link-button {
             display: inline-block;
-            background-color: #e74717;
-            color: #000;
+            background-color: var(--accent-color);
+            color: var(--button-text-color);
             font-size: 16px;
             padding: 12px 25px;
             margin: 20px 0;
@@ -78,6 +89,7 @@
         .link-button:active {
             transform: translateY(1px);
         }
+
         @media (max-width: 600px) {
             .link-button {
                 padding: 10px 20px;
@@ -85,32 +97,38 @@
             }
         }
     </style>
-
 </head>
+
 <body>
 
     <h1>お問い合わせ</h1>
-    <p>・Site for Trainに関してお問い合わせいただけます<br><br>・全ページのお問い合わせにあたっての注意事項を必ずお読みください</p>
-    <a href="/enzan/about" class="link-button"><strong>前のページへもどる</strong></a>
+    <p>
+        ・Site for Trainに関してお問い合わせいただけます<br><br>
+        ・全ページのお問い合わせにあたっての注意事項を必ずお読みください
+    </p>
+
+    <a href="/enzan/about" class="link-button">
+        <strong>前のページへもどる</strong>
+    </a>
 
     <div class="wrap">
         <!-- <div id="giscus"></div> -->
     </div>
 
     <script src="https://giscus.app/client.js"
-            data-repo="youtame/enzan"
-            data-repo-id="R_kgDOQaCV6Q"
-            data-category="Announcements"
-            data-category-id="DIC_kwDOQaCV6c4CyFIZ"
-            data-mapping="pathname"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="bottom"
-            data-theme="preferred_color_scheme"
-            data-lang="ja"
-            crossorigin="anonymous"
-            async>
+        data-repo="youtame/enzan"
+        data-repo-id="R_kgDOQaCV6Q"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQaCV6c4CyFIZ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ja"
+        crossorigin="anonymous"
+        async>
     </script>
 
 </body>
