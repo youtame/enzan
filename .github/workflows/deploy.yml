@@ -3,7 +3,7 @@ name: Deploy VitePress to GitHub Pages
 on:
   push:
     branches:
-      - mains
+      - main
   workflow_dispatch:
 
 jobs:
@@ -43,3 +43,21 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
 
+
+      - name: Notify Slack (deploy success)
+        if: success()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+            "text": "VitePress deployed to GitHub Pages\nRepository: '"${{ github.repository }}"'\nBranch: '"${{ github.ref_name }}"'\nActor: '"${{ github.actor }}"'"
+          }' \
+          ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Notify Slack (deploy failure)
+        if: always() && failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{
+            "text": "Deployed failed\nRepository: '"${{ github.repository }}"'\nWorkflow: '"${{ github.workflow }}"'\nRun: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を見る>"
+          }' \
+          ${{ secrets.SLACK_WEBHOOK_URL }}
