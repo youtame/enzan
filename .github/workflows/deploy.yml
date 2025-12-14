@@ -8,7 +8,9 @@ name: Deploy VitePress to GitHub Pages
 #  workflow_dispatch:
 
 on:
-  workflow_dispatch:
+  push:
+    tags:
+      - 'deploy-*'
 
 jobs:
   build:
