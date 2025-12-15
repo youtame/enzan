@@ -22,13 +22,11 @@
 
 1. clone github's repository
     ```bash
-    cd ~/dev
     git clone git@github.com:youtame/enzan.git
     ```
 
 2. build docker container
     ```bash
-    cd ~/dev/enzan
     docker compose up -d --build
     ```
 
