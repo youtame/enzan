@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy_reason:
-        description: 'Deploy reason (optional)'
+        description: 'Deploy reason (デプロイの理由)'
         required: true
         default: 'manual deploy'
 
