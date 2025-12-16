@@ -27,6 +27,14 @@ const members = [
         links: [
             { icon: 'github', link: 'https://github.com/koh-tonaka/' },
         ]
+    },
+    {
+        avatar: 'https://github.com/nanoraa-3.png',
+        name: 'nanoraa-3',
+        title: 'Author',
+        links: [
+            { icon: 'github', link: 'https://github.com/nanoraa-3/' },
+        ]
     }
 ]
 </script>
@@ -62,7 +70,8 @@ const members = [
 
 ## 掲載している記事について
 
-掲載されている記事は、筆者が独自に収集した情報を基に作成しています。そのため、記事の内容についてはあらかじめご了承の上でご覧ください。
+- 掲載されている記事は、筆者が独自に収集した情報を基に作成しています。そのため、記事の内容に誤りがあることがありますのであらかじめご了承の上でご覧ください。
+- 各記事の内容はそれぞれの著者が書いた内容がそのまま反映されていることをご承知おきください。
 
 ## お問い合わせ
 

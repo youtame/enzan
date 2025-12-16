@@ -88,7 +88,8 @@ export default {
           { text: '三重県伊賀市へ行った話', link: '/article/20251123' },
           { text: '東京から１時間で行ける秘境', link: '/article/20251204' },
           { text: '南武線のダイヤ改正2024', link: '/article/20251206' },
-          { text: 'シンガポールのMRTの話', link: '/article/20251211' }
+          { text: 'シンガポールのMRTの話', link: '/article/20251211' },
+          { text: '中国の新幹線（高铁）について', link: '/article/20251216' }
         ]
       },
       {

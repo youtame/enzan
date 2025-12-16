@@ -81,6 +81,13 @@ image="/enzan/photos/20251211-1.png"
 description="シンガポールのMRT、SMRTに乗った時の話"
 link="./20251211"
 />
+
+<Linkcard
+title="16日　中国の新幹線（高铁）について"
+image="/enzan/assets/no-image.png"
+description="中国の新幹線についての話"
+link="./20251216"
+/>
 </div>
 
 
