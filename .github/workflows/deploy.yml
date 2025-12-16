@@ -11,13 +11,36 @@ on:
   push:
     tags:
       - 'deploy-*'
+  workflow_dispatch:
+    inputs:
+      deploy_reason:
+        description: 'Deploy reason (optional)'
+        required: true
+        default: 'manual deploy'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      deploy_type: ${{ steps.context.outputs.deploy_type }}
+      deploy_ref: ${{ steps.context.outputs.deploy_ref }}
+      deploy_reason: ${{ steps.context.outputs.deploy_reason }}
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set deploy context
+        id: context
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "deploy_type=manual" >> $GITHUB_OUTPUT
+            echo "deploy_ref=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "deploy_reason=${{ github.event.inputs.deploy_reason }}" >> $GITHUB_OUTPUT
+          else
+            echo "deploy_type=tag" >> $GITHUB_OUTPUT
+            echo "deploy_ref=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "deploy_reason=tag deploy" >> $GITHUB_OUTPUT
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -42,20 +65,29 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-
     runs-on: ubuntu-latest
 
     steps:
+      - name: Guard manual deploy branch
+        if: github.event_name == 'workflow_dispatch' && github.ref_name != 'main'
+        run: |
+          echo "Manual deploy is only allowed on main branch"
+          exit 1
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
 
       - name: Notify Slack (deploy success)
         if: success()
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data '{
-            "text": "VitePress deployed to GitHub Pages\nRepository: '"${{ github.repository }}"'\nBranch: '"${{ github.ref_name }}"'\nActor: '"${{ github.actor }}"'"
+            "text": ":rocket: VitePress deploy success\n"\
+                    "Type: '"${{ needs.build.outputs.deploy_type }}"'\n"\
+                    "Ref: '"${{ needs.build.outputs.deploy_ref }}"'\n"\
+                    "Reason: '"${{ needs.build.outputs.deploy_reason }}"'\n"\
+                    "Repo: '"${{ github.repository }}"'\n"\
+                    "Actor: '"${{ github.actor }}"'"
           }' \
           ${{ secrets.SLACK_WEBHOOK_URL }}
 
