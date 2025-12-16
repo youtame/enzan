@@ -40,7 +40,6 @@ jobs:
             echo "deploy_type=tag" >> $GITHUB_OUTPUT
             echo "deploy_ref=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "deploy_reason=tag deploy" >> $GITHUB_OUTPUT
-          fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -80,22 +79,17 @@ jobs:
       - name: Notify Slack (deploy success)
         if: success()
         run: |
-          curl -X POST -H 'Content-type: application/json' \
-          --data '{
-            "text": ":rocket: VitePress deploy success\n"\
-                    "Type: '"${{ needs.build.outputs.deploy_type }}"'\n"\
-                    "Ref: '"${{ needs.build.outputs.deploy_ref }}"'\n"\
-                    "Reason: '"${{ needs.build.outputs.deploy_reason }}"'\n"\
-                    "Repo: '"${{ github.repository }}"'\n"\
-                    "Actor: '"${{ github.actor }}"'"
-          }' \
-          ${{ secrets.SLACK_WEBHOOK_URL }}
+          cat <<EOF | curl -f -X POST -H 'Content-type: application/json' --data @- ${{ secrets.SLACK_WEBHOOK_URL }}
+          {
+            "text": ":rocket: VitePress deploy success\nType: ${{ needs.build.outputs.deploy_type }}\nRef: ${{ needs.build.outputs.deploy_ref }}\nReason: ${{ needs.build.outputs.deploy_reason }}\nRepo: ${{ github.repository }}\nActor: ${{ github.actor }}"
+          }
+          EOF
 
       - name: Notify Slack (deploy failure)
         if: always() && failure()
         run: |
-          curl -X POST -H 'Content-type: application/json' \
-          --data '{
-            "text": "Deployed failed\nRepository: '"${{ github.repository }}"'\nWorkflow: '"${{ github.workflow }}"'\nRun: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を見る>"
-          }' \
-          ${{ secrets.SLACK_WEBHOOK_URL }}
+          cat <<EOF | curl -f -X POST -H 'Content-type: application/json' --data @- ${{ secrets.SLACK_WEBHOOK_URL }}
+          {
+            "text": ":x: VitePress deploy failed\nRepository: ${{ github.repository }}\nWorkflow: ${{ github.workflow }}\nRun: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を見る>"
+          }
+          EOF
