@@ -83,7 +83,7 @@ jobs:
         run: |
           cat <<EOF | curl -f -X POST -H 'Content-type: application/json' --data @- ${{ secrets.SLACK_WEBHOOK_URL }}
           {
-            "text": ":rocket: VitePress deploy success\nType: ${{ needs.build.outputs.deploy_type }}\nRef: ${{ needs.build.outputs.deploy_ref }}\nReason: ${{ needs.build.outputs.deploy_reason }}\nRepo: ${{ github.repository }}\nActor: ${{ github.actor }}"
+            "text": "VitePress deploy success\nType: ${{ needs.build.outputs.deploy_type }}\nRef: ${{ needs.build.outputs.deploy_ref }}\nReason: ${{ needs.build.outputs.deploy_reason }}\nRepo: ${{ github.repository }}\nActor: ${{ github.actor }}"
           }
           EOF
 
@@ -92,6 +92,6 @@ jobs:
         run: |
           cat <<EOF | curl -f -X POST -H 'Content-type: application/json' --data @- ${{ secrets.SLACK_WEBHOOK_URL }}
           {
-            "text": ":x: VitePress deploy failed\nRepository: ${{ github.repository }}\nWorkflow: ${{ github.workflow }}\nRun: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を見る>"
+            "text": "VitePress deploy failed\nRepository: ${{ github.repository }}\nWorkflow: ${{ github.workflow }}\nRun: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を見る>"
           }
           EOF
