@@ -1,6 +1,6 @@
 <template>
     <div class="main-card">
-        <img :src="image" alt="author image" class="author-image" />
+        <img :src="image" alt="Author image" class="author-image" />
         <h2 class="author-name">{{ name }}</h2>
         <p class="author-intro">{{ intro }}</p>
     </div>
