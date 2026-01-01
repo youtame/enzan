@@ -95,7 +95,7 @@ link="./20251216"
 <details>
 <summary style="font-size: 20px; font-weight: 600;">1月の記事</summary>
 
-### 12 月
+### 1 月
 
 <div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
 
