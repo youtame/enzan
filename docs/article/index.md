@@ -10,14 +10,12 @@ import Linkcard from '../components/Link.vue';
 日付のトグルをタップして表示
 :::
 
-## 2025年
-
+## 2025 年
 
 <details>
 <summary style="font-size: 20px; font-weight: 600;">11月の記事</summary>
 
-### 11月
-
+### 11 月
 
 <div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
 
@@ -56,8 +54,7 @@ link="./20251123"
 <details>
 <summary style="font-size: 20px; font-weight: 600;">12月の記事</summary>
 
-### 12月
-
+### 12 月
 
 <div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
 
@@ -88,7 +85,27 @@ image="/enzan/assets/no-image.png"
 description="中国の新幹線についての話"
 link="./20251216"
 />
+
 </div>
 
+</details>
+
+## 2025 年
+
+<details>
+<summary style="font-size: 20px; font-weight: 600;">1月の記事</summary>
+
+### 12 月
+
+<div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
+
+<Linkcard
+title="01日　JR東E231系未更新者の話"
+image="/enzan/photos/20260101-1.png"
+description="JR東日本のE231系の未更新車に乗った時の話"
+link="./20260101"
+/>
+
+</div>
 
 </details>
