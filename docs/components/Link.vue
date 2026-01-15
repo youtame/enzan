@@ -2,8 +2,8 @@
     <a :href="link" class="article-card">
         <img :src="image" alt="Article Thumbnail" class="card-image" />
         <div class="card-body">
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
+            <h3>{{ title }}</h3>
+            <p>{{ description }}</p>
         </div>
     </a>
 </template>
@@ -13,7 +13,7 @@ defineProps({
     title: String,
     image: String,
     description: String,
-    link: String
+    link: String,
 });
 </script>
 
@@ -23,7 +23,7 @@ defineProps({
     flex-direction: column;
     width: 250px;
     background-color: #e74717;
-    color: #FFF;
+    color: #fff;
     border-radius: 10px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
@@ -33,7 +33,7 @@ defineProps({
 
 .article-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: #FFF;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -50,5 +50,4 @@ defineProps({
 img {
     border-radius: 0px;
 }
-
 </style>

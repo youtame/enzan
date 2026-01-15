@@ -90,7 +90,7 @@ link="./20251216"
 
 </details>
 
-## 2025 年
+## 2026 年
 
 <details>
 <summary style="font-size: 20px; font-weight: 600;">1月の記事</summary>
@@ -100,7 +100,7 @@ link="./20251216"
 <div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
 
 <Linkcard
-title="01日　JR東E231系未更新者の話"
+title="01日　JR東E231系未更新車の話"
 image="/enzan/photos/20260101-1.png"
 description="JR東日本のE231系の未更新車に乗った時の話"
 link="./20260101"
