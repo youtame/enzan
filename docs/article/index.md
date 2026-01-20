@@ -107,10 +107,10 @@ link="./20260101"
 />
 
 <Linkcard
-title="06日　快速みえに乗った話"
-image="/enzan/photos/20260106-1.png"
-description="JR東日本のE231系の未更新車に乗った時の話"
-link="./20260101"
+title="06日　快速みえの乗車記"
+image="/enzan/photos/20260116-2.jpg"
+description="快速みえに乗った時のお話です"
+link="./20260116"
 />
 
 </div>
