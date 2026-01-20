@@ -140,6 +140,7 @@ export default {
           { text: "シンガポールのMRTの話", link: "/article/20251211" },
           { text: "中国の新幹線（高铁）について", link: "/article/20251216" },
           { text: "JR東E231系未更新車の話", link: "/article/20260101" },
+          { text: "快速みえに乗って話", link: "/article/20260106" },
         ],
       },
       {
