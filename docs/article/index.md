@@ -4,10 +4,8 @@ import Linkcard from '../components/Link.vue';
 
 # 記事一覧
 
-現在公開中の記事一覧です。　記事は、公開された日付順に並んでいます。
-
 ::: warning 表示について
-日付のトグルをタップして表示
+日付の部分をタップすると、その月分の記事が表示されます
 :::
 
 ## 2025 年
@@ -108,9 +106,27 @@ link="./20260101"
 
 <Linkcard
 title="06日　快速みえの乗車記"
-image="/enzan/photos/20260116-2.jpg"
+image="/enzan/photos/20260116-2.png"
 description="快速みえに乗った時のお話です"
 link="./20260116"
+/>
+
+</div>
+
+</details>
+
+<details>
+<summary style="font-size: 20px; font-weight: 600;">4月の記事</summary>
+
+### 4 月
+
+<div style="margin-top:30px; margin-bottom: 40px; display: flex; justify-content: space-around; gap: 30px; flex-wrap: wrap;">
+
+<Linkcard
+title="04日　日本の米軍石油列車（前編）"
+image="/enzan/photos/20260404-1.png"
+description="日本では知っている米軍の石油を輸送する列車"
+link="./20260404"
 />
 
 </div>

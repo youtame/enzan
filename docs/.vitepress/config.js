@@ -123,7 +123,7 @@ export default {
                 text: "はじめに",
                 items: [
                     { text: "イントロダクション", link: "/menu" },
-                    { text: "コンテンツに関して", link: "/features.md" },
+                    { text: "主な掲載コンテンツ", link: "/features.md" },
                 ],
             },
             {
@@ -154,7 +154,7 @@ export default {
                         link: "/article/20251211",
                     },
                     {
-                        text: "中国の新幹線（高铁）について",
+                        text: "中国の新幹線について",
                         link: "/article/20251216",
                     },
                     {
@@ -162,6 +162,10 @@ export default {
                         link: "/article/20260101",
                     },
                     { text: "快速みえの乗車記", link: "/article/20260116" },
+                    {
+                        text: "日本の米軍石油列車（前編）",
+                        link: "/article/20260404",
+                    },
                 ],
             },
             {
