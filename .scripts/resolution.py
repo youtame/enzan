@@ -2,13 +2,11 @@ import os
 from PIL import Image
 
 def get_image_resolutions(directory_path):
-    # 対応する拡張子のリスト
     valid_extensions = ('.jpg', '.jpeg', '.png', '.webp', '.gif')
     
     print(f"{'ファイル名':<30} | {'解像度 (幅 x 高さ)':<20}")
     print("-" * 55)
 
-    # 指定ディレクトリ内のファイルをスキャン
     for filename in os.listdir(directory_path):
         if filename.lower().endswith(valid_extensions):
             file_path = os.path.join(directory_path, filename)
@@ -20,7 +18,5 @@ def get_image_resolutions(directory_path):
             except Exception as e:
                 print(f"{filename:<30} | エラー: {e}")
 
-# --- 実行 ---
-# VitePressの画像ディレクトリなどを指定してください
 target_dir = '../docs/public/photos' 
 get_image_resolutions(target_dir)

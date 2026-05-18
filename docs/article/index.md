@@ -19,28 +19,28 @@ import Linkcard from '../components/Link.vue';
 
 <Linkcard
 title="20日　塩山駅の話" 
-image="/enzan/photos/20251120-1.png" 
+image="/enzan/photos/20251120-1.webp" 
 description="塩山に行ったときの話"
 link="./20251120"
 />
 
 <Linkcard
 title="21日　横浜市営地下鉄の進化" 
-image="/enzan/photos/20251121-1.png" 
+image="/enzan/photos/20251121-1.webp" 
 description="進化に関する話"
 link="./20251121"
 />
 
 <Linkcard
 title="22日　一泊二日の寄り道" 
-image="/enzan/photos/20251122-1.png" 
+image="/enzan/photos/20251122-1.webp" 
 description="学校帰りに大阪へ行った話"
 link="./20251122"
 />
 
 <Linkcard
 title="23日　三重県伊賀市へ行った話"
-image="/enzan/photos/20251123-1.png"
+image="/enzan/photos/20251123-1.webp"
 description="三重県伊賀市へ行き鉄道に乗った話"
 link="./20251123"
 />
@@ -58,21 +58,21 @@ link="./20251123"
 
 <Linkcard
 title="04日　東京から１時間で行ける秘境"
-image="/enzan/photos/20251204-1.png"
+image="/enzan/photos/20251204-1.webp"
 description="JR鶴見線大川駅へ行ったときの話"
 link="./20251204"
 />
 
 <Linkcard
 title="06日　南武線のダイヤ改正2024"
-image="/enzan/photos/20251206-1.png"
+image="/enzan/photos/20251206-1.webp"
 description="南武線による覇者行動"
 link="./20251206"
 />
 
 <Linkcard
 title="11日　シンガポールのMRT"
-image="/enzan/photos/20251211-1.png"
+image="/enzan/photos/20251211-1.webp"
 description="シンガポールのMRT、SMRTに乗った時の話"
 link="./20251211"
 />
@@ -99,14 +99,14 @@ link="./20251216"
 
 <Linkcard
 title="01日　JR東E231系未更新車の話"
-image="/enzan/photos/20260101-1.png"
+image="/enzan/photos/20260101-1.webp"
 description="JR東日本のE231系の未更新車に乗った時の話"
 link="./20260101"
 />
 
 <Linkcard
 title="06日　快速みえの乗車記"
-image="/enzan/photos/20260116-2.png"
+image="/enzan/photos/20260116-2.webp"
 description="快速みえに乗った時のお話です"
 link="./20260116"
 />
@@ -124,7 +124,7 @@ link="./20260116"
 
 <Linkcard
 title="04日　日本の米軍石油列車（前編）"
-image="/enzan/photos/20260404-1.png"
+image="/enzan/photos/20260404-1.webp"
 description="日本では知っている米軍の石油を輸送する列車"
 link="./20260404"
 />
