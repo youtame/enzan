@@ -125,7 +125,7 @@ link="./20260116"
 <Linkcard
 title="04日　日本の米軍石油列車（前編）"
 image="/enzan/photos/20260404-1.webp"
-description="日本では知っている米軍の石油を輸送する列車"
+description="日本で走っている米軍の石油を輸送する列車"
 link="./20260404"
 />
 

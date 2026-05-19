@@ -3,6 +3,7 @@
 export default {
     base: "/enzan/",
     lastUpdated: false,
+    lang: "ja-JP",
     title: "Site for Train",
     publicDir: "public",
 
