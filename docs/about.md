@@ -9,7 +9,8 @@ const members = [
         links: [
             { icon: 'github', link: 'https://github.com/youtame/' },
             { icon: 'x', link: 'https://x.com/Geniusrailway' },
-            { icon: 'youtube', link: 'https://www.youtube.com/@GeniusRailway' }
+            { icon: 'youtube', link: 'https://www.youtube.com/@GeniusRailway' },
+            { icon: 'instagram', link: 'https://www.instagram.com/geniusrailway/' }
         ],
     },
     {
@@ -79,7 +80,8 @@ const members = [
 お問い合わせは<a href="/enzan/pages/contact-page.html" target="_blank">こちらのお問い合わせページへ</a>お願いいたします。
 
 ::: warning お問い合わせ前にお読みください
+
 - お問い合わせには**GitHubのアカウント**が必要です。また、**問い合わせの内容はすべての利用者の方が閲覧できます**のでご注意ください。
 
 - みなさまからのお問い合わせをお待ちしております。
-:::
+  :::

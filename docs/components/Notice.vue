@@ -32,9 +32,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { useData } from "vitepress"; // VitePressのヘルパーを導入
+import { useData } from "vitepress";
 
-// isDarkを抽出（今回はCSSメインで対応しますが、JSで判定したい時に使えます）
 const { isDark } = useData();
 
 type Notice = {
@@ -69,7 +68,6 @@ onMounted(async () => {
 .notice-section {
     margin: 40px auto;
     width: 100%;
-    /* テキスト色をVitePressの標準に合わせる */
     color: var(--vp-c-text-1);
 }
 
@@ -84,12 +82,10 @@ onMounted(async () => {
     margin-bottom: 6px;
     overflow: hidden;
     transition: all 0.2s ease;
-    /* 閉じている時の境界線を透明にしておく */
     border: 1px solid transparent;
 }
 
 .notice-item:hover {
-    /* ホバー時に少し背景を明るく/暗くする */
     background-color: var(--vp-c-default-soft);
 }
 
@@ -102,13 +98,12 @@ onMounted(async () => {
     font-weight: 600;
 }
 
-/* 開いている時のヘッダー背景 */
 .notice-item[open] .notice-header {
     color: var(--vp-c-brand-1);
 }
 
 .notice-item[open] {
-    border-color: var(--vp-c-brand-1);
+    /* border-color: var(--vp-c-brand-1); */
     background-color: var(--vp-c-bg);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -119,7 +114,6 @@ onMounted(async () => {
     padding: 4px 14px;
     border-radius: 6px;
     font-size: 14px;
-    /* 背景はブランド色、文字は背景に応じた読みやすい色 */
     background-color: var(--vp-c-brand-1);
     color: var(--vp-c-bg);
     flex-shrink: 0;
@@ -128,7 +122,6 @@ onMounted(async () => {
 
 .notice-title {
     flex: 1;
-    /* 折り返し対策 */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -139,7 +132,7 @@ onMounted(async () => {
     line-height: 1.7;
     border-top: 1px solid var(--vp-c-divider);
     background-color: var(--vp-c-bg);
-    white-space: pre-wrap; /* 改行を反映させる */
+    white-space: pre-wrap;
 }
 
 summary {
@@ -160,7 +153,6 @@ summary::-webkit-details-marker {
     transform: rotate(180deg);
 }
 
-/* アラート系の色もVitePress変数に合わせる */
 .alert {
     padding: 16px;
     border-radius: 8px;

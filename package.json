@@ -1,15 +1,15 @@
 {
-  "name": "enzanvitepress-blog",
-  "private": true,
-  "scripts": {
-    "dev": "vitepress dev docs --host 0.0.0.0",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
-  },
-  "dependencies": {
-    "vitepress": "^1.2.3",
-    "vue": "^3.4.0",
-    "@vue/server-renderer": "^3.4.0"
-  },
-  "packageManager": "yarn@4.9.2"
+    "name": "enzanvitepress-blog",
+    "private": true,
+    "scripts": {
+        "dev": "vitepress dev docs --host 0.0.0.0",
+        "build": "vitepress build docs",
+        "serve": "vitepress serve docs"
+    },
+    "dependencies": {
+        "vitepress": "^1.5.0",
+        "vue": "^3.4.0",
+        "@vue/server-renderer": "^3.4.0"
+    },
+    "packageManager": "yarn@4.6.0"
 }
