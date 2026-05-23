@@ -21,14 +21,14 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        env:
+            FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
         outputs:
             deploy_type: ${{ steps.context.outputs.deploy_type }}
             deploy_ref: ${{ steps.context.outputs.deploy_ref }}
             deploy_reason: ${{ steps.context.outputs.deploy_reason }}
-
         steps:
             - uses: actions/checkout@v4
-
             - name: Set deploy context
               id: context
               shell: bash
@@ -43,21 +43,19 @@ jobs:
                     echo "deploy_reason=tag deploy" >> $GITHUB_OUTPUT
                   fi
 
+            - name: Enable Corepack
+              run: corepack enable
+
             - name: Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: 22
                   cache: "yarn"
 
-            - name: Enable Corepack
-              run: corepack enable
-
             - name: Install dependencies
               run: yarn install --immutable
-
             - name: Build VitePress site
               run: yarn build
-
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
