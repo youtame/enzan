@@ -7,9 +7,9 @@
         "serve": "vitepress serve docs"
     },
     "dependencies": {
+        "@vue/server-renderer": "^3.4.0",
         "vitepress": "^1.5.0",
-        "vue": "^3.4.0",
-        "@vue/server-renderer": "^3.4.0"
+        "vue": "^3.4.0"
     },
     "packageManager": "yarn@4.6.0"
 }
